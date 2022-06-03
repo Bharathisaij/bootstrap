@@ -1,0 +1,205 @@
+<html>
+    <head> 
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="home.css"/>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top"> 
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bootnav">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>  
+
+                    </button>
+                    <a class="navbar-brand" href="#">Bootstrap Tutorial</a>
+                </div>
+                
+                <div id="bootnav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a> </li>
+                        <li><a href="#">About Us</a> </li>
+                        <li><a href="#">Contact Us</a> </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="forms.html">
+                                <span class="glyphicon glyphicon-user"></span> Signup
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-log-in"></span> Login
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Bootstrap3 Introduction</h1>
+                <p>Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.
+    
+                    Bootstrap is completely free to download and use!</p>
+            </div>
+            <hr/>
+
+            <button class="btn btn-success">CLick Me </button>
+            <button class="btn btn-info mybutton">CLick Me </button>
+            <button class="btn btn-primary">CLick Me </button>
+            <button class="btn btn-danger">Don't Show!! </button>
+            <button class="btn btn-warning">CLick Me </button> 
+            <hr/>
+
+            <!-- Modal-->
+            <!--Modal plugin is a dialog box/popup window that is displayed on top of the current page-->
+            <button class="btn btn-info mdbutton" data-toggle="modal" data-target="#mymodal">Click to open Modal</button>
+            
+            <!--modal-->
+            <div id="mymodal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!--modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title"> Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>The Modal plugin is a dialog box/popup window that is displayed on top of the current page:
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"> close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr/>
+
+            <!-- Carousel  Image slider-->
+
+           <div id="devCarousel" class="carousel slide" data-ride="carousel">
+               <ol class="carousel-indicators"> <!--adding indicator to slider like dots-->
+                   <li data-target="#devCarousel" data-slide-to="0" class="active"></li>
+                   <li data-target="#devCarousel" data-slide-to="1"></li>
+                   <li data-target="#devCarousel" data-slide-to="2"></li>
+              </ol>
+                 <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                    <img src="img1.jpg" alt="Los Angeles">
+                    </div>
+                
+                    <div class="item">
+                    <img src="img2.jpg" alt="Chicago">
+                    </div>
+                
+                    <div class="item">
+                    <img src="img3.jpg".jpg" alt="New York">
+                    </div>
+                </div>  
+               <!--left and right controls-->
+              <a class="left carousel-control" href="#devCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#devCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+              
+
+
+           </div>
+
+            <!-- Media class adding image to left of the content-->
+            <div class="media">
+                <div class="media-left">
+                    <img src="dinner.png" alt="food" class="media-object" style="width:250px;"/>
+                    
+                </div>
+                <div class="media-body">
+                    <div class="media-heading">
+                        <h4> Dinner Ideas</h4>
+                    
+                        <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                </div>
+            </div>
+             <!-- Media class adding image to right of the content-->
+            <div class="media">
+               
+                <div class="media-body">
+                 
+                        <h4 class="media-heading"> Dinner Ideas</h4>
+                    
+                        <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    
+                </div>
+                <div class="media-right">
+                    <img src="dinner.png" alt="food" class="media-object" style="width:250px;"/>
+                </div>
+            </div>
+
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3>students </h3>
+                </div>
+                <div class="panel-body">
+                     <!--Table -->
+
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th> Roll No</th>
+                        <th> Name</th>
+                        <th> Class</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ramu</td>
+                        <td>UI Class</td>
+                        <td> <button class="btn btn-info">
+                            <span class="glyphicon glyphicon-edit"></span>
+                        </button>
+                     <button class="btn btn-info">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Shiv</td>
+                        <td>UX Class</td>
+                        <td> <button class="btn btn-info mybutton">Edit</button> </td>
+                    </tr>
+                    <tr>
+                        <td>3   </td>
+                        <td>Joe</td>
+                        <td>react Class</td>
+                        <td><button class="btn btn-info">Edit</button></td>
+                    </tr>
+                </tbody>
+            </table>
+                </div>
+            </div>
+           
+            <img src="bg1.jpg" alt="foodbg" class="img-responsive"/>
+            
+        </div>
+       
+          
+
+     
+
+        
+    </body>
+</html>

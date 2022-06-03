@@ -1,0 +1,10 @@
+.mybutton{
+    background-color: rgb(255, 127, 208);
+}
+.mybutton:hover{
+    background-color: blue;
+}
+.item >img{
+    height: 350px !important;
+    width: 100%;
+}
